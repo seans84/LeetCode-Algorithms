@@ -14,7 +14,6 @@ def convert(s, num_rows)
   sa = s.split("")
   h = {}
   count = 1
-  up = true
   down = false
   output_string = ""
   sa.each do |letter|
