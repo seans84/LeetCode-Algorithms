@@ -7,7 +7,7 @@
 def reverse(x)
   number = x.to_s.gsub(/[^\d]/, '')
   sign  = x.to_s.gsub(/[^\+|\-]/, '')
-  reversed_number = (sign + number.to_s.split("").reverse.join("")).to_i
+  reversed_number = (sign + number.to_s.reverse).to_i
   if reversed_number > 2**31 - 1 || reversed_number < -2**31
     0
   else
