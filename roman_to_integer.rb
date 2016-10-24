@@ -6,8 +6,8 @@
 def roman_to_int(s)
   arr = s.split("")
   arr_dup = []
-  letter_hash = { I: 1, IV: 4, V: 5, IX: 9, X: 10, L:50,
-                  XL:40, XC: 90, C: 100, CD: 400, D: 500,
+  letter_hash = { I: 1, IV: 4, V: 5, IX: 9, X: 10, XL:40,
+                  L:50, XC: 90, C: 100, CD: 400, D: 500,
                   CM: 900, M: 1000 }
 
   1.upto(arr.length) do
